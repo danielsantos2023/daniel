@@ -1,0 +1,195 @@
+@import url("header.css");
+
+:root {
+    --cor-de-fundo: #f9f9f9; /* Cor de fundo suave */
+    --branco: #ffffff; /* Branco para contrastar */
+    --laranja: #ff5722; /* Cor laranja para destacar */
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --vermelho-pizza: #d32f2f; /* Cor vermelha para pizzas */
+    --verde-pizza: #388e3c; /* Cor verde para vegetais e ingredientes */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Poppins', sans-serif; /* Usar a fonte Poppins */
+    color: #333; /* Texto escuro para melhor legibilidade */
+}
+
+header {
+    background-color: var(--laranja);
+    padding: 10px 20px;
+    color: var(--branco);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+.lista-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.lista-menu__item {
+    list-style: none;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.lista-menu__link:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: var(--vermelho-pizza);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+.banner__titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.banner__texto {
+    margin-bottom: 20px;
+}
+
+.banner__pesquisa {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.carrossel {
+    padding: 20px;
+}
+
+.carrossel__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__descrição {
+    text-align: center;
+    padding: 20px;
+}
+
+.descrição__titulo-livro {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.descrição__texto {
+    font-size: 1em;
+    color: #555;
+}
+
+.descrição__imagem {
+    width: 100%;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--branco);
+}
+
+.botões {
+    display: flex;
+    gap: 10px;
+}
+
+.botões__ancora {
+    text-decoration: none;
+    color: var(--laranja);
+    font-weight: bold;
+}
+
+.tópicos {
+    padding: 20px;
+    background-color: var(--branco);
+}
+
+.tópicos__titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tópicos__link {
+    text-decoration: none;
+    color: var(--vermelho-pizza);
+    font-weight: 500;
+}
+
+.tópicos__link:hover {
+    text-decoration: underline;
+}
+
+.contato {
+    padding: 20px;
+    background-color: var(--verde-pizza);
+    color: var(--branco);
+    text-align: center;
+}
+
+.contato__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contato__texto {
+    margin-bottom: 15px;
+}
+
+.contato__email {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.rodapé {
+    background-color: var(--laranja);
+    color: var(--branco);
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,23 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #F5F3F0; /* Cor de fundo mais quente e acolhedora */
+    --branco: #FFFFFF;
+    --laranja: #F4A261; /* Um tom de laranja mais suave, associado a alimentos */
+    --azul-degrade: linear-gradient(97.54deg, #BF6D3F 35.49%, #E4B472 165.37%); /* Gradiente que lembra pizza */
+    --fonte-principal: "Poppins", sans-serif; /* Mantém a fonte Poppins para um look moderno */
+    --azul: #3E3A39; /* Um tom mais escuro e neutro para contraste */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul); /* Cor do texto ajustada para boa legibilidade */
+}

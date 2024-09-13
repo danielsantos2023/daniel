@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria Delícia</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Adicionando estilo para redimensionar as imagens */
+    .redimensionar {
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Menu</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Pizzas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Bebidas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Promoções</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Sobre Nós</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Contato</a>
+        </li>
+      </ul>
+      <img src="img/LogoPizzaria.svg" alt="Logo da Pizzaria Delícia" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para uma deliciosa pizza?</h2>
+    <p class="banner__texto">Explore nosso cardápio e descubra suas novas favoritas!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual pizza você deseja?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Nossas Pizzas</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/PizzaMargherita.svg" class="redimensionar" alt="Pizza Margherita"></div>
+        <div class="swiper-slide"><img src="img/PizzaPepperoni.svg" class="redimensionar" alt="Pizza Pepperoni"></div>
+        <div class="swiper-slide"><img src="img/PizzaQuatroQueijos.svg" class="redimensionar" alt="Pizza Quatro Queijos"></div>
+        <div class="swiper-slide"><img src="img/PizzaVeggie.svg" class="redimensionar" alt="Pizza Veggie"></div>
+        <div class="swiper-slide"><img src="img/PizzaHavaiana.svg" class="redimensionar" alt="Pizza Havaiana"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Experimente também...</h3>
+          <h2 class="descrição__titulo-livro">Pizza de Calabresa</h2>
+          <p class="descrição__texto">Acompanha queijo, azeitonas e cebola.</p>
+        </div>
+        <img src="img/PizzaCalabresa.svg" class="redimensionar" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Adicionar aos Favoritos" /></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao Carrinho" /></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Pedidas</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/PizzaMargherita.svg" class="redimensionar" alt="Pizza Margherita"></div>
+        <div class="swiper-slide"><img src="img/PizzaPepperoni.svg" class="redimensionar" alt="Pizza Pepperoni"></div>
+        <div class="swiper-slide"><img src="img/PizzaQuatroQueijos.svg" class="redimensionar" alt="Pizza Quatro Queijos"></div>
+        <div class="swiper-slide"><img src="img/PizzaVeggie.svg" class="redimensionar" alt="Pizza Veggie"></div>
+        <div class="swiper-slide"><img src="img/PizzaHavaiana.svg" class="redimensionar" alt="Pizza Havaiana"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">pizza1
+        <div class="descrição">
+          <img src="img/Estrela.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Chef do Mês</h3>
+          <h2 class="descrição__titulo-livro">Giovanni Rossi</h2>
+          <p class="descrição__texto">Chef especialista em pizzas autênticas italianas.</p>
+        </div>
+        <img src="img/Chef.svg" class="redimensionar">>
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Adicionar aos Favoritos"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao Carrinho"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS POPULARES</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Pizza Margherita</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Pizza Pepperoni</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Pizza Quatro Queijos</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Pizza Veggie</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Pizza Havaiana</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Receba Nossas Novidades!</h2>
+    <p class="contato__texto">Promoções especiais, novos sabores e muito mais.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Pizzaria Delícia</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
